@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="C:\Users\MATIAS\Pictures\tarea\logo-img.png" class="logo">
+     <div class="cliente-icon" onclick="abrirCliente()">👤</div>
+    <h1>Fazer Pedido</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="pedidos.html">Cardápio</a>
+    <a href="comentarios.html">Comentários</a>
+    <a href="contato.html">Contato</a>
+</nav>
+
+<div class="container">
+
+     <h2>Escolha sua pizza</h2>
+ <h3>Tradicionais da Família</h3>
+ <div class="card">
+     <p>Mussarela - R$29,90</p>
+     <button onclick="adicionarItem('Mussarela', 29.90)">Adicionar</button>
+ </div>
+ <div class="card">
+     <p>Calabresa - R$29,90</p>
+     <button onclick="adicionarItem('Calabresa', 29.90)">Adicionar</button>
+ </div>
+ <div class="card">
+     <p>Frango com Catupiry - R$29,90</p>
+     <button onclick="adicionarItem('Frango com Catupiry', 29.90)">Adicionar</button>
+ </div>
+ <h3>Pizzas Especiais</h3>
+ <div class="card">
+     <p>4 Queijos - R$39,90</p>
+     <button onclick="adicionarItem('4 Queijos', 39.90)">Adicionar</button>
+ </div>
+ <div class="card">
+     <p>Bacon - R$39,90</p>
+     <button onclick="adicionarItem('Bacon', 39.90)">Adicionar</button>
+ </div>
+ <div class="card">
+     <p>Pepperoni - R$39,90</p>
+     <button onclick="adicionarItem('Pepperoni', 39.90)">Adicionar</button>
+ </div>
+ <h3>Pizzas Doces</h3>
+ <div class="card">
+     <p>Brigadeiro - R$44,90</p>
+     <button onclick="adicionarItem('Brigadeiro', 44.90)">Adicionar</button>
+ </div>
+ <div class="card">
+     <p>Chocolate com Morango - R$44,90</p>
+     <button onclick="adicionarItem('Chocolate com Morango', 44.90)">Adicionar</button>
+ </div>
+ <div class="card">
+     <p>Banana com Canela - R$44,90</p>
+     <button onclick="adicionarItem('Banana com Canela', 44.90)">Adicionar</button>
+ </div>
+ <h3>Bebidas</h3>
+ <div class="card">
+     <p>Coca-Cola - R$3,90</p>
+     <button onclick="adicionarItem('Coca-Cola', 3.90)">Adicionar</button>
+ </div>
+ <div class="card">
+     <p>Fanta - R$3,90</p>
+     <button onclick="adicionarItem('Fanta', 3.90)">Adicionar</button>
+ </div>
+ <div class="card">
+     <p>Pepsi - R$3,90</p>
+     <button onclick="adicionarItem('Pepsi', 3.90)">Adicionar</button>
+ </div>
+ <div class="card">
+     <p>Del Valle - R$4,90</p>
+     <button onclick="adicionarItem('Del Valle', 4.90)">Adicionar</button>
+ </div>
+    <div class ="card"></div>
+    <h2>Seu Pedido</h2>
+    <ul id="listaPedido"></ul>
+    <p><strong>Total: R$ <span id="total">0.00</span></strong></p>
+
+    <button onclick="finalizarPedido()">Finalizar Pedido</button>
+
+</div>
+
+<footer>
+    <div class="footer-left">🍕 Sabor que conquista a cada fatia</div>
+    <div class="footer-right">
+        📞 (11) 99999-9999 <br>
+        📍 Rua das Pizzas, 123
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

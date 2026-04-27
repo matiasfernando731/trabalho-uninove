@@ -1,0 +1,119 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #fff8f0;
+}
+
+/* HEADER */
+header {
+    background: #b22222;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+}
+.logo {
+    height: 120px; /* AUMENTA AQUI */
+    position: absolute;
+    left: 20px;
+    top: 5px;
+}
+
+
+.logo-home {
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* MENU */
+nav {
+    background: #8b0000;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* CONTEÚDO */
+.container {
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+/* BOTÃO */
+button {
+    background: #b22222;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* CLIENTE */
+.cliente-icon {
+    position: absolute; /* fica dentro do header */
+    top: 20px;
+    right: 20px;
+    background-color: #b22222;
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+.cliente-box {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px
+    background: white;
+    padding: 15px;
+}
+
+
+.footer-right {
+    text-align: right;
+}
+/* FAZ O SITE OCUPAR A TELA TODA */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CONTEÚDO EXPANDE */
+.container {
+    flex: 1;
+    padding: 20px;
+}
+
+/* RODAPÉ FIXO EMBAIXO */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: #8b0000;
+    color: white;
+    padding: 15px;
+}
+.promo-img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+
